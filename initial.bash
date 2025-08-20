@@ -8,6 +8,6 @@ done
 sleep 60
 
 # Start Chromium in kiosk mode (fullscreen, locked)
-chromium --kiosk --no-first-run --disable-infobars --disable-session-crashed-bubble "https://specificka-stranka.cz"
+chromium --user-data-dir=/tmp/chromium-profile --kiosk --no-first-run --disable-infobars --disable-session-crashed-bubble "https://192.168.199.8:5000"
 
 # Note: Kiosk mode locks Chromium to fullscreen and disables most exit methods.
